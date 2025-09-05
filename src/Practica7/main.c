@@ -13,9 +13,7 @@ int main() {
     scanf("%lf", &b); // <- Storage the input for user
     printf("Height:\n");
     scanf("%lf", &h); // <- Storage the input for user
-    result = B * b;
-    result /= 2;
-    result *= h; // <- calc area
+    result = ((B + b) *h) / 2; // <- calc area
     printf("The area of trapeze is: %f \n", result); // <- Final input :D
 
     int continueProgram = 1;
