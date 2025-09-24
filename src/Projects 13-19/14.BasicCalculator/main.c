@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
+// Reviewed ✅
 
 int main() {
     int opc;
@@ -20,7 +21,7 @@ int main() {
         break;
         case 4: res = a / b; printf("El resultado de la división es %.2f\n", res);
         break;
-        default: printf("No existe tal operación\n");
+        default: printf("No existe tal operación\n"); break;
     }
     return 0;
 

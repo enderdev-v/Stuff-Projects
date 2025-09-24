@@ -6,6 +6,7 @@
 #define EURtoMXN 21.61
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
+// Reviewed ✅
 
 int main()
 {
@@ -22,23 +23,23 @@ int main()
     {
     case 1:
         res = a * 100;
-        printf("%f mts converted to %f cm", a, res);
+        printf("%f mts converted to %f cm \n", a, res);
         break;
     case 2:
         res = a * 1000;
-        printf("%f km converted to %f mts", a, res);
+        printf("%f km converted to %f mts \n", a, res);
         break;
     case 3:
         res = a / 100;
-        printf("%f cm converted to %f mts", a, res);
+        printf("%f cm converted to %f mts \n", a, res);
         break;
     case 4:
         res = a / 1000;
-        printf("%f mts converted to %f km", a, res);
+        printf("%f mts converted to %f km \n", a, res);
         break;
     default:
         res = a * 100;
-        printf("%f mts converted to %f cm (default)", a, res);
+        printf("%f mts converted to %f cm (default) \n", a, res);
         break;
     }
 

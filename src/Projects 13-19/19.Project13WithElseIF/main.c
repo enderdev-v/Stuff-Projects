@@ -24,6 +24,8 @@ int main()
 
     int continueProgram = 1;
 
+    printf("Do you want to continue? (1 for yes, 0 for no): \n ");
+
     scanf("%d", &continueProgram);
     if (continueProgram == 0)
         return 0;
