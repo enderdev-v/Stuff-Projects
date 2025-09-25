@@ -22,13 +22,13 @@ int main()
         printf("Tell me the lenght of two sides of Rectangle\n");
         scanf("%lf%lf", &a, &b);
         res = a * b;
-        printf("The Are of Square is: %lf\n", res);
+        printf("The Are of Rectangle is: %lf\n", res);
         break;
     case 3:
         printf("Tell me the radio of Circle\n");
         scanf("%lf", &a);
         res = (a * a) * MathPI;
-        printf("The Are of Square is: %lf\n", res);
+        printf("The Are of Circle is: %lf\n", res);
         break;
     case 4:
         printf("Base Major:\n");

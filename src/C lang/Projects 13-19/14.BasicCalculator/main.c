@@ -23,7 +23,6 @@ int main() {
         break;
         default: printf("No existe tal operación\n"); break;
     }
-    return 0;
 
     int continueProgram = 1;
 
