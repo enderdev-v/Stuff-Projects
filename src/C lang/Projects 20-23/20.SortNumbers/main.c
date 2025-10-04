@@ -6,7 +6,7 @@
 int main()
 {
     int n1, n2, n3, aux; // n1 < n2 < n3
-    printf("Enter three integers: \n"); // <-- tipo lo verde es string pero definirlo como char xd[] 
+    printf("Enter three integers: \n");
 
     scanf("%d%d%d", &n1, &n2, &n3);
     
