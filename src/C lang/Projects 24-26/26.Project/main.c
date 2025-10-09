@@ -7,16 +7,14 @@ int main()
 {
     int contapp = 1;
     while (contapp != 0) {
-        int n, n2, fact;
-        printf("Hi, what number you want in factorial?\n");
-        scanf("%d", &n);
-        fact = 1;
-        n2 = 1;
+        int n = 1, number = 7, lim;
+        printf("Hi, what number is limit in the multiplication table\n");
+        scanf("%d", &lim);
+        
         do {
-            fact = fact * n2;
-            n2++;
-        } while (n2 <= n);
-        printf("The factorial of %d is: %d\n", n, fact);
+            printf("%d * %d = %d\n", number, n, number * n);
+            n++;
+        } while (n <= lim);
         printf("Do you want to continue? (1 for yes, 0 for no)\n");
         scanf("%d", &contapp);
         
