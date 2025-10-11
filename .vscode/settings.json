@@ -1,5 +1,9 @@
 {
     "files.associations": {
         "stdlib.h": "c"
-    }
+    },
+    "java.project.sourcePaths": [
+        "src\\java\\tests"
+    ],
+    "java.project.referencedLibraries": []
 }
