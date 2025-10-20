@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include <math.h>
 
-// Reviewed ✅
-
 int main()
 {
     int opc;
