@@ -6,7 +6,7 @@
 
 // Function getting Factorial
 
-int menu() {
+double menu() {
 
     int opc;
     double a, b, res;
@@ -22,31 +22,34 @@ int menu() {
         printf("Tell me the second value");
         scanf("%lf", &b);
         res = pow(a, b);
-        printf("The result of the Exponent is %lf\n", res);
         break;
     case 2:
         res = sqrt(a);
-        printf("The result of the Squareroot is %lf\n", res);
         break;
     case 3:
         res = cos(a);
-        printf("The result of the Cosine is %lf\n", res);
         break;
     case 4:
         res = log(a);
-        printf("The result of the Logarithm is %lf\n", res);
         break;
-    default:
-        printf("The operation doesn't exist\n");
+    default:    
+        res = NAN;
         break;
     }
-    
+    return res;
 }
 
 // Function main
 int main(int argc, char argv[])
 {
-    menu();
+    double res = menu();
+    
+    if (res = NAN) {
+        printf("The operation doesn't exist\n");
+    } else {
+        printf("The result is: %d", res);
+    }
+    
     system("pause");
     return 0;
 }
