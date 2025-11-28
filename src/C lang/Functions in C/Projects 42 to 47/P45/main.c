@@ -6,37 +6,7 @@
 
 // Function getting Factorial
 
-double menu() {
-
-    int opc;
-    double a, b, res;
-
-    printf("Tell me the first value\n");
-    scanf("%lf", &a);
-
-    printf("Choose 1. Exponent 2. Squareroot 3. Cosine 4. Logarithm \n");
-    scanf("%d", &opc);
-    switch (opc) {
-    case 1:
-        printf("Tell me the second value\n");
-        scanf("%lf", &b);
-        res = pow(a, b);
-        break;
-    case 2:
-        res = sqrt(a);
-        break;
-    case 3:
-        res = cos(a);
-        break;
-    case 4:
-        res = log(a);
-        break;
-    default:  
-        res = NAN;  
-        break;
-    }
-    return res;
-}
+double menu();
 
 // Function main
 int main(int argc, char argv[])
@@ -51,4 +21,35 @@ int main(int argc, char argv[])
     
     system("pause");
     return 0;
+}
+
+
+// Functions 
+
+double menu() {
+    int opc;
+    double a, b;
+    printf("Tell me the first value\n");
+    scanf("%lf", &a);
+    printf("Choose 1. Exponent 2. Squareroot 3. Cosine 4. Logarithm \n");
+    scanf("%d", &opc);
+    switch (opc) {
+    case 1:
+        printf("Tell me the second value\n");
+        scanf("%lf", &b);
+        return pow(a, b);
+        break;
+    case 2:
+        return sqrt(a);
+        break;
+    case 3:
+        return cos(a);
+        break;
+    case 4:
+        return log(a);
+        break;
+    default:  
+        return NAN;  
+        break;
+    }
 }
